@@ -21,24 +21,23 @@ namespace AccessMoodfier
              Console.WriteLine($"Turn On Water : {temperature}");
         }
     }
-class MainApp
-{
-    static void Main(string[] args)
+    class MainApp
     {
-        try
+        static void Main(string[] args)
         {
-            WaterHeater heater = new WaterHeater();
-            heater.SetTemperature(29);
-            heater.TurnOnWater();
+            try
+            {
+               WaterHeater heater = new WaterHeater();
+               heater.SetTemperature(29);
+               heater.TurnOnWater();
 
-            heater.SetTemperature(-2);
-            heater.TurnOnWater();
-        }
-        catch (Exception e0
-        {
-            Console.WriteLine(e.Message)
+               heater.SetTemperature(-2);
+               heater.TurnOnWater();
+            }
+            catch (Exception e0
+            {
+                Console.WriteLine(e.Message)
+            }
         }
     }
-}
-
-       
+}       
